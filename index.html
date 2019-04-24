@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Registration Form</title>
+   <link rel="stylesheet" type="text/css" href="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/style.css" /> 
+    <script src="script.js"> </script>
+</head>
+
+<body class="form-v9">
+    <div class="page-content">
+        <div class="form-v9-content" style="background-image: url('images/form-v9.jpg')">
+            <form class="form-detail" onsubmit="return myFunction()">
+            <marquee><h1>Welcome First Web Page</h1> </marquee>
+                <h1>Registration Form</h1> 
+                <div class="form-row-total">
+                    <div class="form-row">
+                        <label>Name</label>
+                        <!-- <input type="text" name="full-name" id="fname" class="input-text" placeholder="Your Name" required> -->
+                        <input type="text" id="fname" name="fname" placeholder="Your Name" class="input-text" required>
+
+
+                    </div>
+                    <div class="form-row">
+                        <label>Email</label>
+                        <input type="text" id="email" name="mail" placeholder="Your Email" class="input-text" required pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}">
+                        <!-- <input type="text" name="your-email" id="email" class="input-text" placeholder="Your Email" required pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}"> -->
+                    </div>
+                </div>
+
+
+                <div class="form-row-total">
+                    <div class="form-row">
+                        <label>Phone</label>
+                        <input type="Phone" name="Phone" id="Phone" class="input-text" placeholder="Your Phone" required>
+                    </div>
+                    <div class="form-row">
+                        <label>Date Of Birth</label>
+                        <input type="Date" name="comfirm-password" id="Date" class="input-text" required>
+                    </div>
+                </div>
+
+
+                <div class="form-row-total">
+                    <div class="form-row">
+                        <label>Password</label>
+                        <input type="password" name="password" id="password" class="input-text" placeholder="Your Password" required>
+                    </div>
+                    <div class="form-row">
+                        <label>Comfirm-password</label>
+                        <input type="password" name="comfirm-password" id="comfirm-password" class="input-text" placeholder="Comfirm Password" required>
+                    </div>
+                </div>
+
+                <div class="form-row-total">
+                    <div class="form-row">
+                        <label>Age</label>
+                        <!-- <input type="numeric" name="Age" id="Age" class="input-text" placeholder="Your Age" required> -->
+                        <!-- <input type="text" id="age" size="20" name="ge"> -->
+                        <input type="text" id="age" size="20" name="age" placeholder="Your Age" required>
+                    </div>
+                    <div class="form-row">
+                        <label>Relegion</label>
+                        <select>
+                            <option style='text-color: white' value="">Select</option>
+                            <option value="Islam">Islam</option>
+                            <option value="Hindu">Hindu</option>
+                            <option value="Other">Other</option>
+
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row-total">
+                    <div class="form-row">
+                        <label>Gender</label>
+                        <br>
+                        <label>Male</label>
+                        <input type="radio" name="Gender" id="Male" class="input-text" checked>
+                        <label>Female</label>
+                        <input type="radio" name="Gender" id="Female" class="input-text">
+                        <label>Other</label>
+                        <input type="radio" name="Gender" id="Other" class="input-text">
+                        <br>
+                        <input type="checkbox" id="myCheck">I accept the terms and Condition
+                    </div>
+                </div>
+
+                <div class="form-row-last">
+                    <input type="submit" name="register" class="register" value="Register" id="ak">
+                </div>
+
+
+            </form>
+            <marquee> I love You </marquee>
+        </div>
+    </div>
+
+    <!-- <script>
+        function myFunction() {
+            var at = document.getElementById("email").value.indexOf("@");
+            var age = document.getElementById("age").value;
+            var fname = document.getElementById("fname").value;
+            var password = document.getElementById("password").value;
+            var confirm_password = document.getElementById("comfirm-password").value;
+            var checkBox = document.getElementById("myCheck");
+
+
+            submitOK = "true";
+
+
+            if (fname.length < 5) {
+                alert("Name can't be <5 character!");
+                submitOK = "false";
+            }
+
+            if (at == -1) {
+                alert("Email can not be blank!");
+                submitOK = "false";
+            }
+
+            if (password != confirm_password) {
+                // confirm_password.setCustomValidity("Passwords Don't Match");
+                alert("Passwords Don't Match");
+                submitOK = "false";
+
+            }
+            if (age < 18) {
+                alert("Sorry you are under age!");
+                submitOK = "false";
+            }
+
+            if (checkBox.checked == false) {
+                alert("You must accept terms and conditions!");
+                submitOK = "false";
+            }
+
+
+            if (submitOK == "false") {
+                return false;
+            }
+        }
+    </script> -->
+
+</body>
+
+</html>
